@@ -59,5 +59,3 @@ This repeats forever like a real digital clock.
 - Formatting output (`toString`)
 
 ---
-
-Let me know if you want a version that runs for a few seconds only or with a real-time 1-second delay using `Thread.sleep(1000)`.
