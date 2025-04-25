@@ -1,12 +1,6 @@
-import java.util.Scanner;
-
 public class Main{
 
-
-
 public static void main(String[] args){
-
-
 
     ClockHand hours = new ClockHand(24);
     ClockHand minutes = new ClockHand(60);
