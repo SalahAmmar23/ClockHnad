@@ -1,61 +1,31 @@
-# ClockHnad
+Got it! Here's a more concise explanation of the topic without code examples:
 
+---
 
 # ⏰ Digital Clock Simulation (Java)
 
-This project simulates a **24-hour digital clock** using simple Java classes. The program continuously prints time from `00:00:00` up to `23:59:59` and then loops back to `00:00:00`.
+This project simulates a 24-hour digital clock using Java. It demonstrates key object-oriented programming concepts, such as **encapsulation** and **composition**.
 
 ---
 
 ## 📂 Files
 
-### `Main.java`
-The main class that runs the clock. It creates `ClockHand` objects for hours, minutes, and seconds, and updates them inside an infinite loop.
+- **`Main.java`**: This file runs the clock simulation by creating a `Clock` object. It continuously advances the clock every second, printing the time in `HH:MM:SS` format.
+  
+- **`Clock.java`**: This class handles the logic of the digital clock. It manages three components — hours, minutes, and seconds — and advances them appropriately when their limits are reached.
 
-### `ClockHand.java`
-A helper class that represents a single "hand" of a clock (like seconds, minutes, or hours). It knows how to:
-- Advance its value by one
-- Reset to zero when it reaches its limit
-- Format its value as a two-digit string
+- **`ClockHand.java`**: This class represents a single hand of the clock (e.g., hours, minutes, or seconds). It handles advancing the hand by one unit, and it resets when the limit (like 60 seconds or 24 hours) is reached.
 
 ---
 
-## 🔧 How It Works
+## 🧪 Concepts Demonstrated
 
-1. **Initialization**:
-   - Hours: `ClockHand(24)`
-   - Minutes: `ClockHand(60)`
-   - Seconds: `ClockHand(60)`
-
-2. **Infinite Loop**:
-   - Prints the time in `HH:MM:SS` format
-   - Advances the `seconds`
-   - If `seconds` reach `60` (wraps to `0`), advances the `minutes`
-   - If `minutes` reach `60` (wraps to `0`), advances the `hours`
+- **Object-Oriented Programming (OOP)**: The project uses classes and objects to represent the clock and its components.
+- **Encapsulation**: Each part of the clock (hours, minutes, seconds) is encapsulated in its own class, hiding the internal workings.
+- **Composition**: The `Clock` class is composed of `ClockHand` objects to represent hours, minutes, and seconds.
+- **Time Simulation**: The program simulates the ticking of a clock, advancing the time with logic for rolling over after reaching the limit (e.g., 60 seconds to 0).
+- **Output Formatting**: The time is displayed in a consistent `HH:MM:SS` format.
 
 ---
 
-## 🧪 Sample Output
-
-```
-00:00:00
-00:00:01
-00:00:02
-...
-23:59:59
-00:00:00
-```
-
-This repeats forever like a real digital clock.
-
----
-
-## 🎯 Concepts Learned
-
-- Object-oriented programming
-- Encapsulation (`ClockHand`)
-- Infinite loops
-- Time simulation logic
-- Formatting output (`toString`)
-
----
+This project highlights the fundamentals of Java programming and shows how to build a functional system that mimics real-world behavior.
